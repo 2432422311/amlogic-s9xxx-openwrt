@@ -52,6 +52,9 @@ fi
 rm -rf package/luci-app-amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 #
+# 添加 OpenClash 主仓库（推荐使用 vernesong 官方仓库）
+git clone --depth=1 https://github.com/vernesong/OpenClash.git package/openclash
+
 # Apply patch
 # git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci
 #
